@@ -1,86 +1,63 @@
-let currentScore = 0;
+body {
+  background-color: lightgreen;
+  width: 1000px;
+  height: 1000px;
 
-let totalScore = 0;
-
-const prompt = require('prompt-sync')();
-
-const ROWS = 3;
-const COLS = 3;
-
-const SYMBOLS_COUNT = {
-  🍇: 8,
-  🍉: 5,
-  🍌: 4,
-  🍈: 3,
-  🍑: 3,
-  🍍: 2,
-  👑: 1,
-};
-
-//const 🍇 = 10;
-//const 🍉 = 20;
-
-let randomNumber = Math.floor(Math.random() * 10);
-console.log(randomNumber)
-let score = ''
-
-let score = randomNumber
-if (score === 0) {
-  console.log('🍇');
-  } else if(score === 1) {
-   console.log('🍉');
-  } else if (score === 2) {
-   console.log('🍌');
-  } else if (score === 3) {
-   console.log('🍈');
-   } else if (score === 5) {
-   console.log('🍋');
-   } else if (score === 6) {
-   console.log('🍑');
-   } else if (score === 7) {
-   console.log('🍍')
-   } else {
-   console.log('👑');   
 }
-
-let totalScore = ()
-
-Function getRandomFruit() {}
-
-Function spinWheel() {}
-/*
-  const symbols = [];
+.slots {
+  display: flex;
+  transition: transforms 1s ease-in-out;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-20%, -50%);
 }
-const spin = () => {
-  const symbols = [];
-  for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)) {
-    for (Let i = 0; i < count; i++) {
-      symbols.push(symbol);
-    }
-  };
+.reel {
+  background: white;
+  width: 120px;
+  height: 170px;
+  overflow: hidden;  
+  margin: 10px;
+  border: 4px solid black;
+  background: white;
+  font-size: 75px;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+h1 {
+  font-family: arial;
+  color: red;
+  text-align: center;
+}
+#spin_button {
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(73%, 200%);
+  background: white;
+  border: 3px solid black;
+}
+#scores {
+  font-size: 25px;
   
-  const reels = [];
-    for (Let i = 0; i < COLS; i++) {
-      reels.push([]);
-    const reelSymbols = [...symbols];
-    for (Let j = 0; j < ROWS; ++) {
-      const randomIndex = Math.floor(Math.random() * reelSymbols.length);
-      const selectedSymbol = reelSymbols[randomIndex];
-      reels[i].push(selectedSymbol);
-      reelSymbols.splice(randomIndex, 1);
-    }
-  }
-  return reels;
-};
-const reels = spinWheel();
-console.log(reels);
-Function updateScoreDisplay() {}
-*/
-
-Function addPoints() {}
-
-Function showFruitPoints() {}
-
-Function mainDisplay() {}
-  
-console.log(score)
+}
+p {
+  font-family: arial;
+  font-size: 18px;  
+  margin: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(5%, 270%);
+}
