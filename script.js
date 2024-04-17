@@ -39,7 +39,6 @@ document.getElementById('spin_button').addEventListener('click', function() {
      updateScoreDisplay(); // uppdaterar vad "Score" visar för antal
 });
 
-
 // kalkulerar poängen från den senaste spinnen
 function calculateScores(reelSymbols) {
   currentScore = 0; // Reset current score
@@ -69,4 +68,3 @@ document.getElementById('spin_button').addEventListener('click', function() {
 });
 
 updateScoreDisplay();
-
